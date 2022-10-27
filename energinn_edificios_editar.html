@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="dist/img/AF - Marca Enguia - tagline - curv_fundo branco.jpg">
+  <title>Energinn | Edificios</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <!-- <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li> -->
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="dist/img/AF - Marca Enguia - tagline - curv_fundo azul.jpg" alt="Logo" class="brand-image " style="opacity: .8; transform: translateX(-7px);">
+        <span class="brand-text font-weight-light">Energinn</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Alexandre</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <!-- <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Analise Inicial
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Edificios</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Resultados Inicial</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-pen"></i>
+                <p>
+                  Analise Intermediaria
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Edificios Intermediarios</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Resultados Intermediarios</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <!--  style="border-bottom: 1px solid rgba(53, 52, 52, 0.5)" -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Cadastrar-Editar Edificio</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Analise Inicial</a></li>
+                <li class="breadcrumb-item"><a href="#">Edifcios</a></li>
+                <li class="breadcrumb-item active"><a href="#" style="color: rgb(78, 76, 76)">Cadastrar-Editar
+                    Edificio</a></li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+
+                <div class="col-md-12">
+                  <div class="card-info">
+                    <div class="card-header">
+                      <h3 class="card-title">Tabela de Formulário</h3>
+
+                      <!-- <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div> -->
+                    </div>
+
+                    <div class="card-body">
+
+                      <form action="" method="POST" name="formulario-principal">
+
+                        <div class="row mb-4">
+                          <div class="col-md-10">
+                            <label>Nome da Edificação</label>
+                            <input type="text" class="form-control" id="nome" name="nome" value="Edificio a Cadastrar">
+                          </div>
+                          <div class="col-md-2">
+                            <label>ID do Edificio</label>
+                            <input type="text" class="form-control" id="id_edificio" name="id_edificio" value="4"
+                              disabled>
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-md-6">
+                            <label>Estado</label>
+                            <select class="custom-select rounded" id="estado" name="estado">
+                              <option value=""></option>
+                              <option value="Janeiro" selected>São Paulo</option>
+                              <option value="Fevereiro">Rio de Janeiro</option>
+                              <option value="Paraná">Paraná</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label>Cidade</label>
+                            <select class="custom-select rounded" id="cidade" name="cidade">
+                              <option value=""></option>
+                              <option value="São Paulo" selected>São Paulo</option>
+                              <option value="Ribeirao Preto">Ribeirao Preto</option>
+                              <option value="Campinas">Campinas</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-md-6">
+                            <label>Aréa bruta (m²)</label>
+                            <input type="text" class="form-control" id="area_bruta" name="area_bruta" 
+                            value="80.5">
+                          </div>
+                          <div class="col-md-6">
+                            <label>Área para painéis fotovoltaicos (m²)</label>
+                            <input type="text" class="form-control" id="area_para_paineis_fotovoltaicos_m2" name="area_para_paineis_fotovoltaicos_m2" 
+                            value="60.8">
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-md-3">
+                            <label>Mercado de Energia</label>
+                            <select class="custom-select rounded" id="mercado_de_energia" name="mercado_de_energia">
+                              <option value=""></option>
+                              <option value="Mercado Regulado" selected>Mercado Regulado</option>
+                              <option value="Mercado Livre" selected>Mercado Livre</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Distribuidora de energia elétrica</label>
+                            <input type="text" class="form-control" id="distribuidora_de_energia_eletrica" name="distribuidora_de_energia_eletrica" 
+                            value="Enel-SP">
+                          </div>
+                          <div class="col-md-3">
+                            <label>Subgrupo Tarifário</label>
+                            <select class="custom-select rounded" id="subgrupo_tarifario" name="subgrupo_tarifario">
+                              <option value=""></option>
+                              <option value="A1" selected>A1</option>
+                              <option value="A2" selected>A2</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Modalidade Tarifária</label>
+                            <select class="custom-select rounded" id="modalidade_tarifaria" name="modalidade_tarifaria">
+                              <option value=""></option>
+                              <option value="Azul" selected>Azul</option>
+                              <option value="Verde" selected>Verde</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label>Data de uma fatura</label>
+                            <input type="month" class="form-control" id="data_de_uma_fatura" name="data_de_uma_fatura">
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-md-3">
+                            <label>Demanda contratada ponta do mês analisado (kW/mês)</label>
+                            <input type="text" class="form-control" id="demanda_contratada_ponta_mes_kw_mes" name="demanda_contratada_ponta_mes_kw_mes"
+                            value="15 500.00">
+                          </div>
+                          <div class="col-md-3">
+                            <label>Consumo de energia na ponta do mês analisado (kWh/mês)</label>
+                            <input type="text" class="form-control" id="consumo_de_energia_ponta_kwh_mes" name="consumo_de_energia_ponta_kwh_mes" 
+                            value="5 500.00">
+                          </div>
+                          <div class="col-md-3">
+                            <label>Demanda contratada fora ponta do mês analisado (kW/mês)</label>
+                            <input type="text" class="form-control" id="demanda_contratada_fora_ponta_kwh_mes" name="demanda_contratada_fora_ponta_kwh_mes"
+                            value="2 500.00">
+                          </div>
+                          <div class="col-md-3">
+                            <label>Consumo de energia fora da ponta do mês analisado (kWh/mês)</label>
+                            <input type="text" class="form-control" id="consumo_de_energia_fora_ponta_kwh_mes" name="consumo_de_energia_fora_ponta_kwh_mes"
+                            value="1 500.00">
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <label>Custo do mês analisado (R$/mês)</label>
+                            <input type="text" class="form-control" id="custo_do_mes_analisado_rs_mes" name="custo_do_mes_analisado_rs_mes"
+                            value="20 500.00">
+                          </div>
+                        </div>
+
+                        <a href="#">
+                          <button type="button" class="btn btn-default big-button" style="width: 20%; height: 45px; margin-left: 10px;">Cancelar</button>
+                        </a>
+                        <button type="submit" class="btn btn-info float-left big-button" style="width: 20%; height: 45px; margin-left: 10px;">Salvar</button>
+
+                      </form>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+      <div class="p-3">
+        <h5>Title</h5>
+        <p>Sidebar content</p>
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+        Projetos de Eficiência Energética
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2014-2022 <a href="https://mitsidi.com">Mitsidi</a>.</strong> All rights reserved.
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+
+  <!-- DataTables  & Plugins -->
+  <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="plugins/jszip/jszip.min.js"></script>
+  <script src="plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+  <!-- Input Mask -->
+  <script src="https://rawgit.com/RobinHerbots/Inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+
+  <script>
+  </script>
+</body>
+
+</html>
