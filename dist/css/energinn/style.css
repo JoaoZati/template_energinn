@@ -1,0 +1,33 @@
+.cor-azul-escuro {
+    background-color: #002237;
+}
+
+.fonte-azul-escuro {
+    color: #002237;
+}
+
+.fonte-verde-claro {
+    color: #a4d400;
+}
+
+div.cor-verde-claro {
+    background-color: #a4d400;
+}
+
+.cor-sinza-claro {
+    background-color: #b8b8b8;
+}
+
+.btn-verde-claro {
+    color: #fff;
+    background-color: #a4d400;
+    border-color: #a4d400;
+    box-shadow: none;
+}
+
+.btn-azul-escuro {
+    color: #fff;
+    background-color: #002237;
+    border-color: #002237;
+    box-shadow: none;
+}
