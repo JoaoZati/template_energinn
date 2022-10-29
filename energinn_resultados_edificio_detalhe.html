@@ -18,6 +18,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Project Style -->
+  <link rel="stylesheet" href="dist/css/energinn/style.css">
 
   <!-- DataTables -->
   <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
@@ -224,13 +226,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Analise Inicial</a></li>
-                <li class="breadcrumb-item"><a href="#">Resultados Iniciais</a></li>
+                <li class="breadcrumb-item"><a href="#" class="fonte-verde-claro">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="fonte-verde-claro">Analise Inicial</a></li>
+                <li class="breadcrumb-item"><a href="#" class="fonte-verde-claro">Resultados Iniciais</a></li>
                 <li class="breadcrumb-item active">
-                  <a href="#" style="color: rgb(78, 76, 76)">
                     Resultados Detalhados do Edificio
-                  </a>
                 </li>
               </ol>
             </div><!-- /.col -->
@@ -249,7 +249,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                   <div class="card card-widget widget-user shadow">
                     <!-- Add the bg color to the header using any of the bg-* classes -->
-                    <div class="widget-user-header bg-success">
+                    <div class="widget-user-header card-azul-escuro">
                       <h3 class="widget-user-username">Resumo da Edificação</h3>
                       <h5 class="widget-user-desc">Faculdade | Id: 3</h5>
                     </div>
@@ -349,7 +349,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!-- /.card-body -->
                       </div>
 
-                      <div class="small-box bg-info">
+                      <div class="small-box card-verde-claro">
                         <div class="inner">
                           <h3>Total de Energia Salva com Geradores de Aproximadamente 1.15%</h3>
                           <span>
@@ -413,7 +413,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!-- /.card-body -->
                       </div>
 
-                      <div class="small-box bg-info">
+                      <div class="small-box card-verde-claro">
                         <div class="inner">
                           <h3>Total de Energia Salva com Migração Tarifária de Aproximadamente 1.55%</h3>
                           <span>
@@ -455,13 +455,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-md-12" style="padding-bottom: 15px;">
                           <a href="#" title="Adicionar Edificio" alt="Adicionar Edificio">
                             <button style="width: 20%; float: left; margin: 5px; height: 45px;" type="button"
-                              class="btn btn-block btn-dark">
+                              class="btn btn-block btn-azul-escuro">
                               Download Excell
                             </button>
                           </a>
                           <a href="#" title="Adicionar Edificio" alt="Adicionar Edificio">
                             <button style="width: 20%; float: left; margin: 5px; height: 45px;" type="button"
-                              class="btn btn-block btn-dark">
+                              class="btn btn-block btn-azul-escuro">
                               Download PDF
                             </button>
                           </a>
@@ -606,7 +606,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script>
 
     Highcharts.chart('chart_pizza_1', {
-      colors: ['#365E80', '#1B2F40', '#C7E6FF', '#ADDAFF', '#B38E56', '#FFDFAD', '#6890B3', '#FFD594', '#5C6F80', '#B8DFFF', '#7D8D99'],
+      colors: [
+        '#002237',
+        '#365E80',
+        '#C7E6FF',
+        '#1B2F40'
+      ],
       chart: {
         type: 'column',
         inverted: true,
@@ -680,7 +685,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     });
 
     Highcharts.chart('chart_pizza_2', {
-      colors: ['#365E80', '#1B2F40', '#C7E6FF', '#ADDAFF', '#B38E56', '#FFDFAD', '#6890B3', '#FFD594', '#5C6F80', '#B8DFFF', '#7D8D99'],
+      colors: [
+        '#002237',
+        '#365E80',
+        '#C7E6FF',
+        '#1B2F40'
+      ],
       chart: {
         type: 'column',
         inverted: true,

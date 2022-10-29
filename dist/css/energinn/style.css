@@ -10,11 +10,15 @@
     color: #a4d400;
 }
 
+.color-white {
+    color: white;
+}
+
 div.cor-verde-claro {
     background-color: #a4d400;
 }
 
-.cor-sinza-claro {
+.cor-cinza-claro {
     background-color: #b8b8b8;
 }
 
@@ -30,4 +34,21 @@ div.cor-verde-claro {
     background-color: #002237;
     border-color: #002237;
     box-shadow: none;
+}
+
+.card-azul-escuro {
+    color: #fff;
+    background-color: #002237;
+}
+
+
+.card-verde-claro {
+    background-color: #a4d400;
+    color: white;
+}
+
+
+.card-cinza-claro {
+    background-color: #b8b8b8;
+    color: white;
 }
