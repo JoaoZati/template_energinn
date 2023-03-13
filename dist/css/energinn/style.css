@@ -41,7 +41,6 @@ div.cor-verde-claro {
     background-color: #002237;
 }
 
-
 .card-verde-claro {
     background-color: #a4d400;
     color: white;
@@ -51,4 +50,22 @@ div.cor-verde-claro {
 .card-cinza-claro {
     background-color: #b8b8b8;
     color: white;
+}
+
+.alert-cinza-claro {
+    color: white;
+    background-color: #b8b8b8;
+    border-color: #626563;
+}
+
+.alert-azul-escuro {
+    color: #fff;
+    background-color: #002237;
+    border-color: #002237;
+}
+
+.alert-verde-claro {
+    color: #fff;
+    background-color: #a4d400;
+    border-color: #a4d400;
 }
