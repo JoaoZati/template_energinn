@@ -76,3 +76,7 @@ div.cor-verde-claro {
     background-color: #a4d400;
     border-color: #a4d400;
 }
+
+.card-login {
+    border-top: solid 3px #a4d400;
+}
