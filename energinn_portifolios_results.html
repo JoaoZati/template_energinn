@@ -50,11 +50,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="dist/img/AF - Marca Enguia - tagline - curv_fundo azul.jpg" alt="Logo" class="brand-image "
-                    style="opacity: .8; transform: translateX(-7px);">
-                <span class="brand-text font-weight-light">Energinn</span>
-            </a>
+            <div href="index3.html" class="brand-link">
+                <div class="row">
+                    <div class="col-7">
+                        <a href="energinn_portifolios_list.html">
+                            <img src="dist/img/AF - Marca Enguia - tagline - curv_fundo azul.jpg" alt="Logo" class="brand-image "
+                            style="opacity: .8; transform: translateX(-7px);">
+                            <span class="brand-text font-weight-light color-white">Energinn</span>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-md-12 text-center" style="color: white;">
+                            <select class="btn btn-info btn-verde-claro" style="width: 80%;">
+                                <option value="en">en</option>
+                                <option value="pt">pt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -64,23 +78,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="row">
                             <div class="col-3">
                                 <div class="image">
-                                    <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2"
-                                        alt="User Image">
+                                    <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                                 </div>
                             </div>
-                            <div class="col-8 align-items-start">
+                            <div class="col-6 align-items-start">
                                 <div class="info">
                                     <a href="#" class="d-block">Enelzão</a>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row mt-2 mb-2">
-                            <div class="col-md-12 text-center" style="color: white;">
-                                <select class="btn btn-info btn-verde-claro" style="width: 80%;">
-                                    <option value="en">English</option>
-                                    <option value="pt">Português</option>
-                                </select>
+                            <div class="col-3 my-auto">
+                                <a href="" class="btn btn-azul-escuro" title="Log out" alt="Log out">
+                                    <i class="fas fa-sign-out-alt color-white" style="width:100%"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -91,16 +100,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-                            with font-awesome or any other icon font library -->
-                        <a href="#" class="nav-link">
+                        <!-- <a href="#" class="nav-link">
                             <i class="far fas fa-home nav-icon"></i>
                             <p>Home</p>
-                        </a>
+                        </a> -->
 
                         <li class="nav-item menu-closed">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-wrench"></i>
+                                <i class="nav-icon fas fa-cog"></i>
                                 <p>
                                     Settings
                                     <i class="right fas fa-angle-left"></i>
@@ -116,24 +123,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fas fa-tools nav-icon"></i>
-                                        <p>Application Settings</p>
+                                        <p>Template Customization</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fas fa-users nav-icon"></i>
-                                        <p>Users Settings</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fas fa-hands-helping nav-icon"></i>
-                                        <p>Help</p>
+                                        <p>Users Permissions Settings</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-
+                        
                         <li class="nav-item menu-open">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-city"></i>
@@ -157,6 +158,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </li>
                             </ul>
                         </li>
+
+                        <a href="#" class="nav-link">
+                            <i class="far fas fa-question-circle nav-icon"></i>
+                            <p>Help</p>
+                        </a>
                     </ul>
                 </nav>
         </aside>
