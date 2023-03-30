@@ -193,7 +193,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="col-md-4 mb-2">
                                     <a href="#" title="Add New Portfolio" alt="Add New Portfolio">
                                         <button style="width: 90%;"
-                                            type="button" class="btn btn-block btn-verde-claro">
+                                            type="button" class="btn btn-block btn-verde-claro"
+                                            data-toggle="modal"
+                                            data-target="#modal-default">
                                             Add New Portfolio
                                         </button>
                                     </a>
@@ -320,6 +322,66 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+
+        <div class="modal fade" id="modal-default">
+            <!-- Use javascript ajax to send form -->
+            <form action="#" id="form" name="form">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header card-verde-claro">
+                            <h4 class="modal-title">Create Portifolio</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Portfolio Name</label>
+                                    <input type="text" class="form-control"
+                                    id="name" name="name"
+                                    value="Portifolio 1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Portifolio Country</label>
+                                    <select class="custom-select rounded" id="country" name="country">
+                                        <option value="" hidden></option>
+                                        <option value="Usa" selected>Usa</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Canada">Canada</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <div class="row justify-content-center" style="width: 100%;">
+                                <div class="col-md-4 mb-2" style="text-align: center;">
+                                    <button type="button" class="btn btn-branco"
+                                    data-dismiss="modal"
+                                    style="width: 90%;">
+                                        Close
+                                    </button>
+                                </div>
+                                <div class="col-md-4 mb-2" style="text-align: center;">
+                                    <button 
+                                    type="button" class="btn btn-info btn-verde-claro"
+                                    onclick="submitFormPortifolio()"
+                                    style="width: 90%;">
+                                        Create
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+
+            </form>
+        </div>
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
