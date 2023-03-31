@@ -52,11 +52,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="dist/img/AF - Marca Enguia - tagline - curv_fundo azul.jpg" alt="Logo" class="brand-image "
-                    style="opacity: .8; transform: translateX(-7px);">
-                <span class="brand-text font-weight-light">Energinn</span>
-            </a>
+            <div href="index3.html" class="brand-link">
+                <div class="row">
+                    <div class="col-7">
+                        <a href="energinn_portifolios_list.html">
+                            <img src="dist/img/AF - Marca Enguia - tagline - curv_fundo azul.jpg" alt="Logo" class="brand-image "
+                            style="opacity: .8; transform: translateX(-7px);">
+                            <span class="brand-text font-weight-light color-white">Energinn</span>
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-md-12 text-center" style="color: white;">
+                            <select class="btn btn-info btn-verde-claro" style="width: 80%;">
+                                <option value="en">en</option>
+                                <option value="pt">pt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -69,30 +83,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                                 </div>
                             </div>
-                            <div class="col-8 align-items-start">
+                            <div class="col-6 align-items-start">
                                 <div class="info">
                                     <a href="#" class="d-block">Enelzão</a>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row mt-2 mb-2">
-                            <div class="col-md-12 text-center" style="color: white;">
-                                <select class="btn btn-info btn-verde-claro" style="width: 80%;">
-                                    <option value="en">English</option>
-                                    <option value="pt">Português</option>
-                                </select>
+                            <div class="col-3 my-auto">
+                                <a href="" class="btn btn-azul-escuro" title="Log out" alt="Log out">
+                                    <i class="fas fa-sign-out-alt color-white" style="width:100%"></i>
+                                </a>
                             </div>
                         </div>
 
                         <div class="row mt-2 mb-2">
                             <div class="col-md-12 text-center" style="color: white;">
                                 <select class="btn btn-info btn-verde-claro" style="width: 80%;">
-                                    <option value="" hidden selected>Portifolio 1</option>
-                                    <option value="exit">
-                                        Exit
-                                        <!-- &#xf52b; -->
-                                    </option>
+                                    <option value="id_portifolio_1" hidden selected>Portifolio 1</option>
+                                    <option value="id_portifolio_2">Portifolio 2</option>
+                                    <option value="id_portifolio_3">Portifolio 3</option>
+                                    <option value="id_portifolio_4">Portifolio 4</option>
+                                    <option value="id_portifolio_5">Portifolio 5</option>
                                 </select>
                             </div>
                         </div>
@@ -101,10 +111,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="col-md-12 text-center" style="color: white;">
                                 <select class="btn btn-info btn-verde-claro" style="width: 80%;">
                                     <option value="" hidden selected>Building 1</option>
-                                    <option value="exit">
-                                        Exit
-                                        <!-- &#xf52b; -->
-                                    </option>
+                                    <option value="id_portifolio_2">Building 2</option>
+                                    <option value="id_portifolio_3">Building 3</option>
+                                    <option value="id_portifolio_4">Building 4</option>
+                                    <option value="id_portifolio_5">Building 5</option>
                                 </select>
                             </div>
                         </div>
@@ -116,42 +126,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-                            with font-awesome or any other icon font library -->
+                        <!-- <a href="#" class="nav-link">
+                            <i class="far fas fa-home nav-icon"></i>
+                            <p>Home</p>
+                        </a> -->
 
                         <li class="nav-item menu-closed">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-home"></i>
-                                <p>
-                                    Home
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fas fa-house-user nav-icon"></i>
-                                        <p>Account Home</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fas fa-city nav-icon"></i>
-                                        <p>Portifolio Home</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fas fa-store nav-icon"></i>
-                                        <p>Building Home</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item menu-closed">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-wrench"></i>
+                                <i class="nav-icon fas fa-cog"></i>
                                 <p>
                                     Settings
                                     <i class="right fas fa-angle-left"></i>
@@ -167,27 +149,83 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fas fa-tools nav-icon"></i>
-                                        <p>Application Settings</p>
+                                        <p>Template Customization</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        <i class="far fas fa-users nav-icon"></i>
-                                        <p>Users Settings</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fas fa-hands-helping nav-icon"></i>
-                                        <p>Help</p>
+                                        <i class="far fas fa-user-lock nav-icon"></i>
+                                        <p>Users Permissions Settings</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        
+
+                        <li class="nav-item menu-closed">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-city"></i>
+                                <i class="nav-icon fas fa-city"></i>
+                                <p>
+                                    Portfolios
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fas fa-city nav-icon"></i>
+                                        <i class="far fas fa-city nav-icon"></i>
+                                        <p>Portifolios</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fas fa-bolt nav-icon"></i>
+                                        <p>Analysis and Results</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item menu-closed">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-city"></i>
+                                <p>
+                                    Portfolio
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fas fa-user-lock nav-icon"></i>
+                                        <p>Portifolio Preferences and Permissions</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fas fa-save nav-icon"></i>
+                                        <p>Edit Portifolio</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        <i class="far fas fa-building nav-icon"></i>
+                                        <p>Portifolio Buildings</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fas fa-bolt nav-icon"></i>
+                                        <p>Analysis and Results</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li class="nav-item menu-open">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-store"></i>
+                                <i class="nav-icon fas fa-building"></i>
                                 <p>
                                     Building
                                     <i class="right fas fa-angle-left"></i>
@@ -196,14 +234,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        <i class="far fas fa-wrench nav-icon"></i>
-                                        <p>Building Settings</p>
+                                        <i class="far fas fa-user-lock nav-icon"></i>
+                                        <p>Building Preferences and Permissions</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">
-                                        <i class="far fas fa-keyboard nav-icon"></i>
-                                        <p>Building Questionare</p>
+                                        <i class="far fas fa-save nav-icon"></i>
+                                        <p>Edit Building</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -238,9 +276,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </li>
                             </ul>
                         </li>
+
+
+                        <a href="#" class="nav-link">
+                            <i class="far fas fa-question-circle nav-icon"></i>
+                            <p>Help</p>
+                        </a>
                     </ul>
                 </nav>
-            </div>
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
@@ -252,7 +295,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             
-                            <h1 class="m-0">Building Questionare</h1>
+                            <h1 class="m-0">Edit Building</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
